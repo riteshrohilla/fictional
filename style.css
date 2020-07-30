@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: #EAF0F1;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 50px;
+    padding-left: 725px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: #586776;
+    cursor: pointer;
+}
+.logo img{
+    width: 30px;
+    margin-top: 0px;
+    margin-right: 48px;
+}
+.signup img{
+  width: 30px;
+  margin-top: 0px;
+  margin-left: 30px;
+}
+.active{
+    color: #2C3335 !important;
+}
+
+.animate__animated {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}   
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+body { text-align: center }
+
+/* Position and style the notice banner */
+.motionless__banner {
+  display: none; /* hides the banner when animations are enabled */
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: .5rem 1rem;
+
+  background: #333;
+  color: #fff;
+  border-top: 2px solid #ff5722;
+}
+
+.motionless__paragraph {
+  margin-bottom: 0;
+}
+
+/* Show the banner if the user disables animations in the OS level */
+@media (print), (prefers-reduced-motion: reduce) {
+  .motionless__banner {
+    display: block;
+  }
+}
+
+/* articel animation code */
+.modal-parent{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	display: none;
+}
+
+.modal{
+	background: white;
+	width: 70%;
+	padding: 30px;
+	border-radius: 6px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 22px;
+	font-family: arial;
+	position: relative;
+	animation: 1s drop;
+}
+@keyframes drop{
+	0%{
+		top: -100px;
+	}
+	100%{
+		top: 50%;
+	}
+}
+.X{
+	position: absolute;
+	right: 20px;
+	top: 5px;
+	font-size: 40px;
+	cursor: pointer;
+}
+section{
+	transition: 2s;
+}
+
+.Article{
+  width: 90%;
+  height: 65%;
+  margin-left: 75px;
+  background-color: deeppink;
+}
+/*.Article.button{
+  position: static;
+  width: 100%;
+  height: 100%;
+  background-size: inherit;
+} */
+
+
+.btn-group{
+  width: 100%;
+  height: 100%;
+  position: static;
+  border: 3px solid #73AD21
+}
+
+/*.products-parent{
+  position: absolute;
+	top: 0px;
+	left: 100px;
+	height: 100vh;
+	width: 100%;
+	display: none;
+}
+*/
+.product img{
+  background: #EAF0F1;
+  position: absolute;
+  width: 322px;
+  height: 623px;
+  left: 75px;
+  top: 937px;
+}
+
+.product h1{
+  position: absolute;
+  width: 310px;
+  height: 90px;
+  left: 75px;
+  top: 819px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 52px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  border: 1.5px solid #000000;
+}
+.product2 img{
+  position: absolute; 
+  width: 659px;
+  height: 440px;
+  left: 430px;
+  top: 830px;
+}
+.product3 img{
+  position: absolute;
+width: 239px;
+height: 359px;
+left: 1119px;
+top: 830px;
+}
+
+.product4 img{
+  position: absolute;
+  width: 251px;
+  height: 328px;
+  left: 1119px;
+  top: 1230px;
+}
+
+.product5 img{
+  position: absolute;
+  width: 659px;
+  height: 258px;
+  left: 430px;
+  top: 1300px;
+}
+
+.nutrition h1{
+  position: absolute;
+  width: 311px;
+  height: 90px;
+  left: 77px;
+  top: 1600px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+  border: 1.5px solid #000000;
+}
+.food img{
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  left:570px;
+  top: 1625px;
+}
+.food2 img{
+  position: absolute;
+  width: 450px;
+  height:700px;
+  left: 75px;
+  top: 1725px;
+}
+.food3 img{
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  left: 570px;
+  top: 2050px;
+}
+.workout h1{
+  position: absolute;
+  width: 311px;
+  height: 90px;
+  left: 77px;
+  top: 2470px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+  border: 1.5px solid #000000;
+}
+.workout img{
+  position: absolute;
+  width: 459px;
+  height: 700px;
+  left: 77px;
+  top: 2610px;
+}
+.workout2 img{
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  left: 570px;
+  top: 2510px;   
+}
+.workout3 img{
+  position: absolute;
+  width: 800px;
+  height: 370px;
+  left: 570px;
+  top: 2930px;
+}
+
+.footer-parent{
+  width: 100%;
+  height: 100%;
+  background: #EAF0F1;
+  top: 9000px;
+}
+.footer ul{
+  display: inline-flex;
+ /* margin: 50px; */
+  padding-left: 225px;
+  top: 9000px;
+}
+.footer ul li{
+  list-style: none;
+ /* margin: 0 20px;*/
+  color: #586776;
+  cursor: pointer;
+  top: 9000px;
+}
